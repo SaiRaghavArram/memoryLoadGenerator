@@ -32,6 +32,6 @@ builddocker() {
 }
 
 
-build
+build memoryloadgenerator
 
 builddocker
