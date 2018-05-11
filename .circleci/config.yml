@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/build
+    machine:
+        image: circleci/classic:edge
+    steps:
+        - checkout:
+             path: $CIRCLE_PROJECT_REPONAME
+        - run:
+             name: Build sample Application
+             shell: /bin/bash
+             command: |
+                cd ~
+                cp build/$CIRCLE_PROJECT_REPONAME/build.sh build
+                cp build/$CIRCLE_PROJECT_REPONAME/config.sh build
+                cp build/$CIRCLE_PROJECT_REPONAME/settings.xml build
+                cd build
+                chmod 777 ./build.sh
+                ./build.sh
+
+        - run:
+             name: Push to docker Image Registry
+             shell: /bin/bash
+             command: |        
+                 docker login --username sairaghavarram --password sairaghavarram
+                 docker push sairaghavarram/memoryloadgenerator    
+                 
+
+general:
+  branches:
+    only:
+      - master
