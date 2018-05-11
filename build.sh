@@ -28,7 +28,7 @@ build(){
 
 builddocker() {
     cd ..
-	docker build -f memoryLoaderGenerator/Dockerfile -t memoryloadergenerator .
+	docker build -f memoryloadergenerator/Dockerfile -t memoryloadergenerator .
 }
 
 
