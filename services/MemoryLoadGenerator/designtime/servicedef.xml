@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<service xmlns="http://www.activegrid.com/namespaces/ServiceDefinitions/1.0" id="MemoryLoadGenerator" class="com.memoryloadgenerator.memoryloadgenerator.MemoryLoadGenerator" type="JavaService" springFile="MemoryLoadGenerator.spring.xml">
+    <dataobjects/>
+</service>

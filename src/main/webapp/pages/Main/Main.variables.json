@@ -1,0 +1,25 @@
+{
+  "MemoryLoadGeneratorIncreaseMemoryLoad" : {
+    "_id" : "wm-MemoryLoadGeneratorIncreaseMemoryLoad-wm.ServiceVariable-1500563638722",
+    "name" : "MemoryLoadGeneratorIncreaseMemoryLoad",
+    "owner" : "Page",
+    "category" : "wm.ServiceVariable",
+    "dataBinding" : [ ],
+    "type" : "integer",
+    "service" : "MemoryLoadGenerator",
+    "operation" : "increaseMemoryLoad",
+    "operationId" : "MemoryLoadGeneratorController_increaseMemoryLoad",
+    "operationType" : "get",
+    "serviceType" : "JavaService",
+    "dataSet" : [ ],
+    "isList" : false,
+    "maxResults" : 20,
+    "startUpdate" : false,
+    "autoUpdate" : true,
+    "inFlightBehavior" : "executeLast",
+    "transformationRequired" : false,
+    "saveInPhonegap" : false,
+    "isDefault" : true,
+    "controller" : "MemoryLoadGenerator"
+  }
+}

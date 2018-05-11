@@ -1,0 +1,18 @@
+<wm-page data-ng-controller="MainPageController" name="mainpage" pagetitle="Main"> 
+    <wm-content name="content"> 
+        <wm-page-content columnwidth="12" name="mainContent" padding="unset 15px"> 
+            <wm-form errormessage="" captionposition="left" title="Increase Memory Load" enctype="application/x-www-form-urlencoded" method="get" dataset="bind:Variables.MemoryLoadGeneratorIncreaseMemoryLoad.dataSet" captionalign="left" name="IncreaseMemoryLoadForm" backgroundcolor="#77aeba"> 
+                <wm-layoutgrid columns="1" name="layoutgrid1"> 
+                    <wm-gridrow name="gridrow1"> 
+                        <wm-gridcolumn columnwidth="12" name="gridcolumn1"> 
+                            <wm-form-field name="sizeToIncreaseInMB" readonly="false" displayname="Size To Increase In Mb" key="sizeToIncreaseInMB" type="integer" show="true" widget="number" inputtype="number" placeholder="Enter value" textalign="left" color="#092930" backgroundcolor="#f6f8f9"></wm-form-field> 
+                        </wm-gridcolumn> 
+                    </wm-gridrow> 
+                </wm-layoutgrid> 
+                <wm-buttongroup horizontalalign="right" class="form-action col-md-12" name="buttongroup1"> 
+                    <wm-button caption="Save" type="submit" class="btn-primary" name="button3" on-click="Variables.MemoryLoadGeneratorIncreaseMemoryLoad.invoke()" backgroundcolor="#1a6990"></wm-button> 
+                </wm-buttongroup> 
+            </wm-form> 
+        </wm-page-content> 
+    </wm-content> 
+</wm-page>
