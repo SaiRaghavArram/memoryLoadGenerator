@@ -15,7 +15,7 @@ setup(){
 	export PATH=$PATH:$JAVA_HOME/bin/
 	export PATH=$M2:$PATH
 
-	cp settings.xml $BASE_HOME/apache-maven-3.5.2/conf/settings.xml
+      #	cp -fR settings.xml $BASE_HOME/apache-maven-3.5.2/conf/settings.xml
 
 	echo $PATH
 }
