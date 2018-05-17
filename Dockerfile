@@ -1,9 +1,11 @@
 FROM ubuntu:16.04
 MAINTAINER SaiRaghavArram
 
-RUN mkdir /memoryloadgenerator
+WORKDIR /build/memoryloadgenerator
 
-COPY /memoryloadgenerator/target/memoryloadgenerator.war memoryloadgenerator/
+RUN mkdir memoryloadgenerator
+
+COPY target/memoryloadgenerator.war memoryloadgenerator/
 
 
 
