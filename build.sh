@@ -28,7 +28,7 @@ build(){
 
 builddocker() {
     cd ..
-	docker build -f memoryloadergenerator/Dockerfile -t memoryloadergenerator .
+	docker build -f memoryloadergenerator/Dockerfile -t sairaghavarram/memoryloadergenerator .
 }
 
 
