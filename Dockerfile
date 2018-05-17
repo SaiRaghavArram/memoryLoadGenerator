@@ -3,7 +3,7 @@ MAINTAINER SaiRaghavArram
 
 RUN mkdir /memoryloadgenerator
 
-COPY memoryloadgenerator/target/memoryloadgenerator.war memoryloadgenerator/
+COPY /memoryloadgenerator/target/memoryloadgenerator.war memoryloadgenerator/
 
 
 
