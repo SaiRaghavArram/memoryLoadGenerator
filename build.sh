@@ -22,16 +22,16 @@ setup(){
 setup
 
 build(){
-	cd $1
+	cd $BASE_HOME/$1
 	mvn clean install -DskipTests
 }
 
 builddocker() {
-    cd ..
-	docker build -f memoryloadergenerator/Dockerfile -t sairaghavarram/memoryloadergenerator .
+    	cd $BASE_HOME/$1
+	docker build -f Dockerfile -t sairaghavarram/memoryloadergenerator .
 }
 
 
 build memoryloadgenerator
 
-builddocker
+builddocker memoryloadgenerator
