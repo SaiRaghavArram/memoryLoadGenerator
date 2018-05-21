@@ -25,7 +25,15 @@ jobs:
              command: |
                  cd ..        
                  docker login --username sairaghavarram --password sairaghavarram
-                 docker push sairaghavarram/memoryloadergenerator   
+                 docker push sairaghavarram/memoryloadergenerator
+        - run:
+                curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl
+                chmod +x ./kubectl
+                mv ./kubectl /usr/local/bin/kubectl
+                wget https://github.com/kubernetes/kops/releases/download/1.8.0/kops-linux-amd64
+                chmod +x kops-linux-amd64
+                mv kops-linux-amd64 /usr/local/bin/kops
+
                  
 
 general:
